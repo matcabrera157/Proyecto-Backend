@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio</title>
+    <link href="/assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body class="bodyrepositorio">
+
+
+    {{> header}}
+
+
+<div class="containerrepositorio">
+    <h1 class="form-titlerepositorio">{{title}}</h1>
+    <form action="/repositories" method="get" class="form">
+        <label for="owner" class="form-label">Nombre de usuario:</label>
+        <input type="text" id="owner" name="owner" class="form-input" required>
+        <label for="repo" class="form-label">Nombre del repositorio:</label>
+        <input type="text" id="repo" name="repo" class="form-input" required>
+        <button type="submit" class="form-button">Obtener detalles del repositorio</button>
+    </form>
+</div>
+
+
+    {{> footer}}
+
+
+</body>
+</html>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario con Bootstrap</title>
+  <!-- Agregar los enlaces a los archivos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="/assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+    {{>  header}} 
+    {{#if error}}
+    <p>{{error}}</p>
+    {{/if}}
+
+  <div class="container form">
+    <h1>Formulario de contacto</h1>
+    <form action="/enviar" method="post">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" name="email" id="email" required placeholder="Ingrese su email">
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="10" required placeholder="Ingrese su mensaje"></textarea>
+      </div>
+      <input type="submit" class="btn btn-primary button2" value="Enviar">
+    </form>
+  </div>
+
+  {{> footer}}
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

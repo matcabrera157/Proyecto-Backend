@@ -1,0 +1,6 @@
+# Archivos y carpetas
+node_modules/
+dist/
+
+# Archivo de variables de entorno
+.env
