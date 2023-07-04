@@ -1,7 +1,7 @@
 # Proyecto-Backend
  
 Este proyecto "TP_Integrador" fue realizado con Node.JS y su framework Express.
-La pagina web cuenta con vistas hechas con archivos .HBS y sus respectivos partials header y footer tambien .hbs.
+La pagina web cuenta con vistas hechas con archivos .HBS y sus respectivos partials header y footer tambien hechos con motores de plantillas.
 El objetivo principal de este proyecto es implementar operaciones basicas de  creación, lectura, actualización y eliminación de contenido en una base de datos,
 estos objetivos se logran en la vista productos donde se pueden concretar todas estas operaciónes con una interfaz dinamica. Se utilizan metodos GET/POST para enviar datos entre archivos y además la pagina puede enviar un formulario de contacto, ingresando los datos del cliente y un mensaje. Tambien se realizo una sección "Repositorio" para interactuar con la API Restful de github. En la parte del header tambien existe un buscador que en función de lo escrito, devolvera ciertas peliculas relacionadas a la busqueda, esto mismo se puede realizar en la sección de "Peliculas" donde en un principio se muestran las peliculas mas exitosas por medio de la conexión a una API Restful de peliculas.
 Las variables de entorno se encuentran en el archivo .env y se configuran como clave y valor para guardar datos sensibles fuera del codigo fuente y luego podran ser utilizadas mediante su clave. Finalmente el proyecto tambien cuenta con varias dependencias instaladas en package.json y con un archivo .gitignore que al subir los archivos y cambios a github, ignora los archivos indicados como por ejemplo el .env.
