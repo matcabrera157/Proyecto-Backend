@@ -5,8 +5,6 @@ dist/
 # Archivo de variables de entorno
 .env
 
-# Ignorar package-lock.json
+# Ignorar archivos de dependencias
 package-lock.json
-
-# Ignorar package.json
 package.json
